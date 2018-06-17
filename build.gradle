@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    //Akka
+    compile 'com.typesafe.akka:akka-actor_2.12:2.5.3'
+    compile group: 'com.lightbend.akka', name: 'akka-stream-alpakka-sqs_2.12', version: '0.18'
+
+    //AWS
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-sqs', version: '1.11.329'
+
+    //RxJava2
+    compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.1.13'
+
+    //Utils
+    compile 'org.projectlombok:lombok:1.16.12'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.0'
+    compile group: 'com.google.guava', name: 'guava', version: '23.5-jre'
+
+    //Test
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.typesafe.akka:akka-testkit_2.12:2.5.3'
+}
+
+mainClassName = "com.pq.akka.AkkaStart"
+
+run {
+    standardInput = System.in
+}

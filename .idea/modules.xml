@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/akkadb.iml" filepath="$PROJECT_DIR$/akkadb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akkadb_main.iml" filepath="$PROJECT_DIR$/.idea/modules/akkadb_main.iml" group="akkadb" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akkadb_test.iml" filepath="$PROJECT_DIR$/.idea/modules/akkadb_test.iml" group="akkadb" />
+    </modules>
+  </component>
+</project>
